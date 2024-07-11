@@ -10,3 +10,51 @@ first_digit = int(two_digit_number[0]) #access 1st
 second_digit = int(two_digit_number[1]) #access 12nd
 two_digit_number = first_digit + second_digit
 print(two_digit_number)
+""" int y float A"""
+# 1st input: enter height in meters e.g: 1.65
+height = input()
+# 2nd input: enter weight in kilograms e.g: 72
+weight = input()
+# Write your code below this line 👇
+new_height = float(height)
+new_weight = int(weight)
+fh = new_height * new_height
+he_to_int = fh * 100
+tt = int(he_to_int)
+bmi = (new_weight * 100) / tt
+f_bmi = int(bmi)
+print(f_bmi)
+"""print(type(a)) B"""
+bmi = new_weight / new_height ** 2 #square
+bmi = new_height / (new_height * new_height)
+bmi_to_int = int(bmi)
+print(bmi_to_int)
+"""weeks left"""
+age = input()
+year = int(52)
+age_int = int(age)
+lifelong = year * age_int
+wholelife = int(4680)
+leftlife = wholelife - lifelong
+life = str(leftlife)
+print("You have " + life + " weeks left.")
+"""solution"""
+age = input()
+years = 90 - int(age)
+weeks = years * 52
+print(f"You have {weeks} weeks left.")
+"""tip calculator"""
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+print("welcome to the tip calculator")
+bill = float(input("What is the total bill? $"))
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+tip = int(input("What porcentage of tip would you like too give? 10, 12 or 15? "))
+#Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
+people = int(input("How many people to split the bill? "))
+#Write your code below this line 👇
+tip_pp = (bill / people) * tip / 100
+total_each = (bill / people) + tip_pp
+final_total = round(total_each, 2)
+final_total = "{:.2f}".format(total_each)
+print(f"Each one pay: ${final_total}")
