@@ -94,4 +94,33 @@ if extra_cheese == "Y":
   bill += 1
 
 print(f"Your final bill is: ${bill}.")
+"""truelove code"""
+print("The Love Calculator is calculating your score...")
+name1 = input() # What is your name?
+name2 = input() # What is their name?
+# 🚨 Don't change the code above 👆
+# Write your code below this line 👇
+
+codet = "true"
+codel = "love"
+love_score = 0
+true_score = 0
+
+sum_names = (name1).lower() + (name2).lower()
+
+for letter in codet:
+  love_score += sum_names.count(letter)
+
+for letter in codel:
+  true_score += sum_names.count(letter)
+
+total = str(love_score) + str(true_score)
+intotal = int(total)
+
+if intotal < 10 or intotal > 90:
+  print(f"Your score is {intotal}, you go together like coke and mentos.")
+elif intotal >= 40 and intotal <= 50:
+  print(f"Your score is {intotal}, you are alright together.")
+else:
+  print(f"Your score is {intotal}.")
 """"""
