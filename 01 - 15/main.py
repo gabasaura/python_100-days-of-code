@@ -149,4 +149,86 @@ elif (score >= 40) and (score <= 50):
   print(f"Your score is {score}, you are alright together.")
 else:
   print(f"Your score is {score}.")
-""""""
+"""band name"""
+#1. Create a greeting for your program.
+print("Welcome to the band name generator")
+#2. Ask the user for the city that they grew up in.
+city = input("Which city did you grow up?\n")
+#3. Ask the user for the name of a pet.
+pet = input("your pet name?\n")
+#4. Combine the name of their city and pet and show them their band name.
+print("your band name is " +  city + " " + pet)
+#5. Make sure the input cursor shows on a new line:
+
+# Solution: https://replit.com/@appbrewery/band-name-generator-end
+"""tip generator"""
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+print("welcome to the tip calculator")
+bill = float(input("What is the total bill? $"))
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+tip = int(input("What porcentage of tip would you like too give? 10, 12 or 15? "))
+#Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
+people = int(input("How many people to split the bill? "))
+#Write your code below this line 👇
+tip_pp = (bill / people) * tip / 100
+total_each = (bill / people) + tip_pp
+final_total = round(total_each, 2)
+final_total = "{:.2f}".format(total_each)
+print(f"Each one pay: ${final_total}")
+"""ride ticket"""
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+age = int(input("What is your age? "))
+if height >= 120:
+  print("You can ride the rollercoaster!")
+  if age < 12:
+    print("Please pay $5.")
+  elif age <= 18:
+    print("Please pay $7.")
+  else:
+    print("Please pay $12.")
+else:
+  print("Sorry, you have to grow taller before you can ride.")
+"""teasure game"""
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+stage1 = input('>>Where do you want to go? \n "left" or "right"\n').lower()
+if stage1 == "left":
+  stage2 = input('You\'re in the middle of the lake.\n >>Do you want to: \n"swim" or "wait" for the boat\n').lower()
+  if stage2 == "wait":
+    stage3 = input('You found the boat and you are in the island.\n >>Which door do you want to open? \n"red", "blue" or "yellow"\n')
+    if stage3 == "yellow":
+      print("YEEEY You win!!")
+    elif stage3 == "red":
+      print("OUCH! You are burned by fire. Game over!")
+    elif stage3 == "blue":
+      print("you are eaten by beasts. Game over!")
+    else:
+      print("Game Over")
+  else:
+    print("You are attacked by the trout. Game over!")
+else: 
+  print("You fell into the hole, Game over uwu")
