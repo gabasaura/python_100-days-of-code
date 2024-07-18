@@ -232,3 +232,4 @@ if stage1 == "left":
     print("You are attacked by the trout. Game over!")
 else: 
   print("You fell into the hole, Game over uwu")
+""""""
