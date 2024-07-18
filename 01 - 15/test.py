@@ -27,10 +27,14 @@ for n in range(1, 100):
 
 
 """
-3. Escribe el código para generar un objeto en que las keys (claves) sean los nombres de los depósitos y los valores un arreglo con los números de serie de los productos ordenados alfabéticamente por nombre."""
+3. Escribe el código para generar un objeto en que las keys (claves) sean los nombres de los depósitos y los valores un arreglo con los números de serie de los productos ordenados alfabéticamente por nombre.
+"""
+
+
 
 """
-4. Haga un programa que filtre el arreglo y devuelva un arreglo con solo el nombre de sus amigos. Si un nombre tiene exactamente 4 letras, ¡puedes estar seguro que es amigo tuyo! De lo contrario, puede estar seguro de que no…"""
+4. Haga un programa que filtre el arreglo y devuelva un arreglo con solo el nombre de sus amigos. Si un nombre tiene exactamente 4 letras, ¡puedes estar seguro que es amigo tuyo! De lo contrario, puede estar seguro de que no…
+"""
 
 #Amigo = [“Ryan”, “Kieran”, “Mark”, “Miguel”]  Deberia [“Ryan”, “Mark”]
 
@@ -38,3 +42,13 @@ for n in range(1, 100):
 5. Escribe una función llamada sumaDigitos que retorne la suma de todos los dígitos de un número dado, por ejemplo:
 5646 => 5+6+4+6 => 21
 """
+digitos = 5646
+
+def suma_digitos(sum):
+    total = 0
+    for n in str(sum):
+        total += int(n)
+    return total
+
+print("total suma digitos =")
+print(suma_digitos(digitos))
