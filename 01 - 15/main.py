@@ -232,4 +232,39 @@ if stage1 == "left":
     print("You are attacked by the trout. Game over!")
 else: 
   print("You fell into the hole, Game over uwu")
-""""""
+"""arrays"""
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+fruits[-1] = "Melons"
+fruits.append("Lemons")
+print(fruits)
+
+""" Treasure MAP A """
+
+line1 = ["⬜️","️⬜️","️⬜️"]
+line2 = ["⬜️","⬜️","️⬜️"]
+line3 = ["⬜️️","⬜️️","⬜️️"]
+map = [line1, line2, line3]
+print("Hiding your treasure! X marks the spot.")
+position = input() 
+col_letter = {"a":0, "b":1, "c":2}
+col = col_letter[position[0].lower()]
+row = int(position[1]) - 1
+map[row][col] = "X"
+#
+print(f"{line1}\n{line2}\n{line3}")
+
+""" Treasure MAP B """
+line1 = ["⬜️","️⬜️","️⬜️"]
+line2 = ["⬜️","⬜️","️⬜️"]
+line3 = ["⬜️️","⬜️️","⬜️️"]
+map = [line1, line2, line3]
+print("Hiding your treasure! X marks the spot.")
+position = input() # Where do you want to put the treasure?
+
+letter = position[0].lower()
+abc = ["a", "b", "c"]
+letter_index = abc.index(letter)
+number_index = int(position[1]) - 1
+map[number_index][letter_index] = "X"
+
+print(f"{line1}\n{line2}\n{line3}")
