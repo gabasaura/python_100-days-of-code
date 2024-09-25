@@ -30,6 +30,7 @@ random_name = random.choice(input)
 print(f"{random_name} is going to buy the meal today!")
 
 """ choose b """
+names_string = "Alice, Bob, Charlie, Diana, Edward"
 names = names_string.split(", ")
 # Get the total number of items in list.
 num_items = len(names)
